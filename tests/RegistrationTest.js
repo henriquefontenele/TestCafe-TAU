@@ -40,7 +40,7 @@ test('User Registration and Login Test',async t => {
      .expect(loginpage.accountHeader.exists).ok()
      .typeText(loginpage.emailInput,userEmail)
      .typeText(loginpage.passwordInput,'123456')
-     .click(loginpage.submitButton)
+     .click(loginpage.submitButton) //this line is error
      .click(homepage.MyAccountLink)
      .expect(customerpage.ordersLink.exists).ok()
      .click(customerpage.ordersLink)
